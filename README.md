@@ -230,7 +230,29 @@ public class Q10 {
     }
 }
 # 11 
-
+class Person {
+    void showPerson() {
+        System.out.println("This is a Person.");
+    }
+}
+class Employee extends Person {
+    void showEmployee() {
+        System.out.println("This is an Employee.");
+    }
+}
+class Manager extends Employee {
+    void showManager() {
+        System.out.println("This is a Manager.");
+    }
+}
+public class Q11 {
+    public static void main(String[] args) {
+        Manager manager = new Manager();
+        manager.showPerson();
+        manager.showEmployee();
+        manager.showManager();
+    }
+}
 # 12
 package labsheet4;
 class A {
@@ -253,7 +275,42 @@ public class Q12 {
     }
 }
 # 13
+class Person {
+    void showPerson() {
+        System.out.println("This is a Person.");
+    }
+}
+class Employee extends Person {
+    void showEmployee() {
+        System.out.println("This is an Employee.");
+    }
+}
+class Doctor extends Employee {
+    void showDoctor() {
+        System.out.println("This is a Doctor.");
+    }
+}
+interface Administrator {
+    void showAdministrator();
+}
+class HospitalManager extends Employee implements Administrator {
+    public void showAdministrator() {
+        System.out.println("This is a Hospital Administrator.");
+    }
+}
+public class Q13 {
+    public static void main(String[] args) {
+        Doctor doctor = new Doctor();
+        doctor.showPerson();
+        doctor.showEmployee();
+        doctor.showDoctor();
 
+        HospitalManager manager = new HospitalManager();
+        manager.showPerson();
+        manager.showEmployee();
+        manager.showAdministrator();
+    }
+}
 # 14
 package labsheet4;
 class Shape {
