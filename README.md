@@ -230,6 +230,7 @@ public class Q10 {
     }
 }
 # 11 
+package labsheet4;
 class Person {
     void showPerson() {
         System.out.println("This is a Person.");
@@ -275,6 +276,7 @@ public class Q12 {
     }
 }
 # 13
+package labsheet4;
 class Person {
     void showPerson() {
         System.out.println("This is a Person.");
@@ -304,7 +306,6 @@ public class Q13 {
         doctor.showPerson();
         doctor.showEmployee();
         doctor.showDoctor();
-
         HospitalManager manager = new HospitalManager();
         manager.showPerson();
         manager.showEmployee();
